@@ -61,7 +61,7 @@ pipeline{
                 }
             }
         }
-        stage('Update Kubernetes Deployment File'){
+        stage('Update Kubernetes Manifest File'){
             steps{
                 script{
                     sh """
