@@ -65,7 +65,7 @@ pipeline{
             steps{
                 script{
                     sh """
-                    cet deployment.yml
+                    cat deployment.yml
                     sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' deployment.yml
                     cat deployment.yml
                     """
