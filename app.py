@@ -30,7 +30,7 @@ def health():
 
 @app.route("/")
 def home():
-    return "Welcome to Mr DevOps Youtube Channel"
+    return "Welcome to my DevOps project: Real-time End to End DevOps CI/CD Project using Jenkins, ArgoCD, Github webhooks, Docker and K8s to deploy a python application"
    
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int("5000"), debug=True)
