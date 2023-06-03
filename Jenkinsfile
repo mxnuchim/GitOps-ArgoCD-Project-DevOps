@@ -72,5 +72,21 @@ pipeline{
                 }
             }
         }
+        stage('Push the changed deployment manifest to Git'){
+            steps{
+                script{
+                    sh """
+                    git config --global user.name "mxnuchim"
+                    git config --global user.email "manuchimoliver779@gmail.com"
+                    git add deployment.yml
+                    git commit -m "updated deployment file"
+                    """
+
+                    withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
+                        sh "git push https://github.com/mxnuchim/GitOps-ArgoCD-Project-DevOps.git main"
+                    }
+                }
+            }
+        }
     }
 }
