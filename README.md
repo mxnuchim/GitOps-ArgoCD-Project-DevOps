@@ -8,7 +8,7 @@ Prerequisites:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 # What I achieved in this project
-- [1] Triggered CD Jenkins Job using CurL command and Pass variables from CI pipelines.
+- [1] Triggered a real time CD Jenkins Job using CurL command and Pass variables from CI pipelines.
 - [2] Connected private GitHub Repo to ArgoCD for CD part.
 - [3] Connected Kubetnetes node to ArgoCD
 - [4] Kubernetes Manifest file creation
