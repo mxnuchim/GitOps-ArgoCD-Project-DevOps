@@ -44,8 +44,8 @@ pipeline{
             steps{
                 script{
 
-                    docker.withRegistry('', REGISTRY_CREDS){
-                        docker_image.push("$BUILD_NUMBER")
+                    docker.withRegistry('',REGISTRY_CREDS){
+                        docker_image.push("${BUILD_NUMBER}")
                         docker_image.push('latest')
                     }
                 }
@@ -91,3 +91,4 @@ pipeline{
     }
 }
 
+//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
